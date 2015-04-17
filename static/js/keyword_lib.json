@@ -1,3 +1,6 @@
-{
-	"all my data is lost" : "hahano.gif "
-}
+[
+	{
+		"key" : "testing stuff",
+		"gif" : "hahano.gif"
+	}
+]
