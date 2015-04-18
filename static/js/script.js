@@ -22,6 +22,13 @@ $( document ).ready(function() {
 
 	function activateGif(gif){
 		console.log("activating" + gif);
+		$('#support-img').css("background-image", "url(gif/kristel.gif)");
+		setTimeout(restoreImage, 1000);
+	}
+	
+	function restoreImage(){
+		console.log("restoring image")
+		$('#support-img').css("background-image", "url(https://toggl.com/app/images/help/support.5fef2ac9.png)");
 	}
 });
 
