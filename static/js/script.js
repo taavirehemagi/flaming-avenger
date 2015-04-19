@@ -15,15 +15,15 @@ $( document ).ready(function() {
 		$.each(jsonList, function(key, value){
 			if(textareaValue.indexOf(value.key) >= 0 && $.inArray(value.key, shownList) < 0){
 				shownList.push(value.key)
-				activateGif(value.gif)
+				activateGif(value.gif, value.duration)
 			}
 		});
 	}
 
-	function activateGif(gif){
+	function activateGif(gif, duration){
 		console.log("activating" + gif);
-		$('#support-img').css("background-image", "url(gif/kristel.gif)");
-		setTimeout(restoreImage, 1000);
+		$('#support-img').css("background-image", "url(gif/"+gif+")");
+		setTimeout(restoreImage, duration);
 	}
 	
 	function restoreImage(){

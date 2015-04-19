@@ -1,6 +1,12 @@
 [
 	{
 		"key" : "testing stuff",
-		"gif" : "hahano.gif"
+		"gif" : "hahano.gif",
+		"duration" : 1000
+	},
+	{
+		"key" : "how hard can it be",
+		"gif" : "proffessionals.gif",
+		"duration" : 2000
 	}
 ]
