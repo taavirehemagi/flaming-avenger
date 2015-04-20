@@ -16,7 +16,7 @@ $( document ).ready(function() {
 		$.each(jsonList, function(key, value){
 			if(textareaValue.toLowerCase().indexOf(value.key.toLowerCase()) >= 0 && $.inArray(value.key, shownList) < 0){
 				// shownList.push(value.key)
-				activateGif(value.gif, value.duration)
+				activateGif(value.gif, value.duration * 5)
 			}
 		});
 	}
