@@ -13,7 +13,7 @@ $( document ).ready(function() {
 	function searchKeyword(){
 		textareaValue = $("#textareaID").val();	
 		$.each(jsonList, function(key, value){
-			if(textareaValue.indexOf(value.key) >= 0 && $.inArray(value.key, shownList) < 0){
+			if(textareaValue.toLowerCase().indexOf(value.key.toLowerCase()) >= 0 && $.inArray(value.key, shownList) < 0){
 				shownList.push(value.key)
 				activateGif(value.gif, value.duration)
 			}
