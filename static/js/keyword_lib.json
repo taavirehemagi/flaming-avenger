@@ -2,17 +2,17 @@
 	{
 		"key" : "data is lost",
 		"gif" : "lost_data.gif",
-		"duration" : 1000
+		"duration" : 4440
 	},
 	{
 		"key" : "single?",
 		"gif" : "single.gif",
-		"duration" : 2000
+		"duration" : 2560
 	},
 	{
 		"key" : "asap",
 		"gif" : "asap.gif",
-		"duration" : 2000
+		"duration" : 5040
 	},
 	{
 		"key" : "great",
@@ -22,16 +22,16 @@
 	{
 		"key" : "hot",
 		"gif" : "hot.gif",
-		"duration" : 2000
+		"duration" : 2080
 	},
 	{
 		"key" : "you suck",
 		"gif" : "suck.gif",
-		"duration" : 2000
+		"duration" : 4160
 	},
 	{
 		"key" : "how hard can it be",
 		"gif" : "hard.gif",
-		"duration" : 2000
+		"duration" : 3200
 	}
 ]
