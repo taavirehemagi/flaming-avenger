@@ -15,7 +15,7 @@ $( document ).ready(function() {
 		textareaValue = $("#textareaID").val();	
 		$.each(jsonList, function(key, value){
 			if(textareaValue.toLowerCase().indexOf(value.key.toLowerCase()) >= 0 && $.inArray(value.key, shownList) < 0){
-				shownList.push(value.key)
+				// shownList.push(value.key)
 				activateGif(value.gif, value.duration)
 			}
 		});
