@@ -1,6 +1,7 @@
 $( document ).ready(function() {
 	
 	shownList = []
+	theaterMode = true
 
 	$("#textareaID").on('input', function (){
 		searchKeyword();
@@ -21,14 +22,21 @@ $( document ).ready(function() {
 	}
 
 	function activateGif(gif, duration){
-		console.log("activating" + gif);
-		$('#support-img').css("background-image", "url(gif/"+gif+")");
+		if(theaterMode){
+			$('#easter-egg').css("background-image", "url(gif/"+gif+")");
+		}else{
+			$('#support-img').css("background-image", "url(gif/"+gif+")");
+		}
 		setTimeout(restoreImage, duration);
 	}
 	
+
 	function restoreImage(){
-		console.log("restoring image")
-		$('#support-img').css("background-image", "url(https://toggl.com/app/images/help/support.5fef2ac9.png)");
+		if(theaterMode){
+			$('#easter-egg').css("background-image", "");
+		}else{
+			$('#support-img').css("background-image", "url(https://toggl.com/app/images/help/support.5fef2ac9.png)");
+		}
 	}
 });
 
