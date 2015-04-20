@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<!-- saved from url=(0026)https://toggl.com/app/help -->
+<html class="no-js"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="description" content="">
+  <!--<base href="/app/">--><base href=".">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <link rel="stylesheet" href="https://toggl.com/app/styles/style.b66036dd.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <script src="./js/vendor.45c21974.js"></script>
+  <script src="./js/jquery-2.1.3.min.js"></script>
+  <style type="text/css"></style>
+
+  <link href="https://toggl.com/app/favicon-inactive.ico" rel="shortcut icon" id="favicon">
+
+  <title>Toggl</title>
+
+</head>
+<body data-version="3.33.9" class="normal-mode">
+
+<div class="page-wrapper"><div><div class="top-nav contain-to-grid wrapper"><nav class="top-bar"><ul>
+  <li class="name"><a href="https://toggl.com/app/#timer"></a></li>
+  <li class="timer-link right-divider left-divider">
+    <a href="https://toggl.com/app/#timer">Timer</a>
+  </li>
+  <li class="reports-link has-dropdown right-divider">
+    <a href="https://toggl.com/app/#reports">Reports</a>
+    <ul class="dropdown">
+      <li class="summary-reports-link"><a href="https://toggl.com/app/#reports/summary">Summary</a></li>
+      <li class="detailed-reports-link"><a href="https://toggl.com/app/#reports/detailed">Detailed</a></li>
+      <li class="weekly-reports-link"><a href="https://toggl.com/app/#reports/weekly">Weekly</a></li>
+      <li class="bookmarks-link top-divider"><a href="https://toggl.com/app/#bookmarks">Bookmarks</a></li>
+    </ul>
+  </li>
+  <li class="projects-link right-divider"><a href="https://toggl.com/app/#projects">Projects</a></li>
+  <li class="team-link right-divider"><a href="https://toggl.com/app/#team">Team</a></li>
+  <li class="settings-link icon has-dropdown right-divider hide">
+    <a href="https://toggl.com/app/#workspaces/edit"><i class="fa fa-bars"></i></a>
+    <ul class="dropdown">
+      <li class="workspace-edit-link"><a href="https://toggl.com/app/#workspaces/edit">Workspace Settings</a></li>
+      <li class="import-link"><a href="https://toggl.com/app/#import">Import</a></li>
+      <li class="subscription-link"><a href="https://toggl.com/app/#subscription">Subscription</a></li>
+    </ul>
+  </li>
+  <li class="loader" style="opacity: 0; display: none;">
+    <i class="fa fa-refresh fa-spin"></i>
+  </li>
+  <li id="smallTimer" class="small-text flip-flop">
+    <a class="cube" href="https://toggl.com/app/#timer">
+      <div class="duration flippety"></div>
+      <div class="flop"><span class="description"></span></div>
+    </a>
+  </li>
+  <li class="icon help-link left-divider right-divider active">
+    <a href="https://toggl.com/app/#help" id="bug-feedback"><i class="fa fa-question-circle"></i></a>
+  </li>
+  <li class="has-dropdown profile-link">
+    <a href="https://toggl.com/app/#dashboard" class="js-username" title="Taavi"><span>Taavi</span></a>
+    <ul class="dropdown">
+      <li class="dashboard-link"><a href="https://toggl.com/app/#dashboard">Dashboard</a></li>
+      <li class="my-profile-link"><a href="https://toggl.com/app/#profile">My Profile</a></li>
+      <li class="achievements-link"><a href="https://toggl.com/app/#achievements">Achievements</a></li>
+      <li class="workspaces-link"><a href="https://toggl.com/app/#workspaces">Workspaces</a></li>
+      <li><a href="https://toggl.com/app/#" id="js-logout">Log Out</a></li>
+    </ul>
+  </li>
+</ul></nav></div>
+
+<!--TODO Notifications part should be refactored into separate templates-->
+<!--[if lt IE 10]>
+<div class="row">
+  <div class="twentyfour columns">
+    <div class="alert-box">
+      You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
+    </div>
+  </div>
+</div>
+<![endif]-->
+
+<div class="achievement-wrapper"></div>
+<div id="overlay-region"></div>
+<div class="notification-wrapper"><div><div class="row alerts-container text-center">
+  <div class="twentyfour columns" id="alert-boxes">
+    <div class="alert-box notice newblogpost"></div>
+    <div class="alert-box notice teamtracker">
+      <span>Are you looking for a team tracker?</span>
+      <a href="http://support.toggl.com/why-choose-toggl-for-your-team" target="_blank" class="js-visit-support">YES, tell me more!</a>
+      <a href="javascript:void(0);" class="cancel">×</a>
+    </div>
+    <div class="alert-box notice offlineMode">
+      You are offline. <span class="additional-info"></span> <a href="https://toggl.com/app/#" class="reconnect">Try to reconnect</a>
+    </div>
+    <div class="alert-box notice outdated outdatedMode">
+      A newer version of this page is available. Please <a href="https://toggl.com/app/#" class="reloadLink">refresh</a> to get fixes and improvements  ;-)
+    </div>
+    <div class="alert-box notice customMessage">
+      <span></span>
+      <a href="" class="close">×</a>
+    </div>
+    <div class="alert-box success">
+      <span></span>
+      <a href="" class="close">×</a>
+    </div>
+    <div class="alert-box alert">
+      <span></span>
+      <a href="" class="close">×</a>
+    </div>
+  </div>
+</div></div></div>
+<div class="content-wrapper  hide-rates pro"><div class="view"><div id="help-page">
+  <div class="row page-title">
+    <div class="eighteen columns">
+      <h1>Information Center</h1>
+    </div>
+  </div>
+  <div id="faq-region" class="row faq"><div><div id="faq-view">
+  <div class="half pad-100">
+    <div class="title-bar">
+      <h2 class="title">FAQ</h2>
+    </div>
+    <div class="body">
+      <div class="link-list"><ul><li><a href="http://support.toggl.com/tracking-time/#Trackrealtime" target="_blank">How to track time in real time?</a></li><li><a href="http://support.toggl.com/tracking-time/#addtimelater" target="_blank">How to add time later?</a></li><li><a href="http://support.toggl.com/tracking-time/#edittime" target="_blank">How to edit time entries?</a></li><li><a href="http://support.toggl.com/projects/#creatingprojectsclients" target="_blank">How can I create/add projects and clients?</a></li><li><a href="http://support.toggl.com/faq/#lost" target="_blank">I can't find my tracked time</a></li><li><a href="http://support.toggl.com/faq/#timezone" target="_blank">Why are times on the Timer page different from times in the Reports section?</a></li></ul></div>
+      <a href="http://support.toggl.com/" class="blue-button" target="_blank">Visit Toggl Knowledge Base For More Answers</a>
+    </div>
+  </div>
+  <div class="half right">
+    <div class="title-bar">
+      <h2 class="title">Video: Toggl Time Tracking Basics</h2>
+    </div>
+  </div>
+</div></div></div>
+  <div class="row no-top">
+    <div id="feedback-region"><div><div id="feedback-view" class="fourty custom-form">
+  <div class="title-bar">
+    <h2 class="title">Send us your feedback and questions</h2>
+  </div>
+  <div class="body">
+    <div class="input-container">
+      <select class="expand feedback-topic appended" style="display: none;">
+        <option value="">- Please specify the topic -</option>
+        <option value="congrats">I want to congratulate you!</option>
+        <option value="feature">I have a feature request</option>
+        <option value="bug">I found a bug</option>
+        <option value="dataloss">I'm missing data </option>
+        <option value="other">Other</option>
+      </select><div class="custom dropdown expand" style="width: auto;"><a href="https://toggl.com/app/#" class="current">- Please specify the topic -</a><a href="https://toggl.com/app/#" class="selector"></a><ul style="width: auto;"><li class="selected">- Please specify the topic -</li><li>I want to congratulate you!</li><li>I have a feature request</li><li>I found a bug</li><li>I'm missing data </li><li>Other</li></ul></div>
+    </div>
+    <div class="input-container">
+      <textarea rows="5" id="textareaID"></textarea>
+      <div class="image-loading hide">
+        <i class="fa fa-refresh fa-spin"></i>
+      </div>
+    </div>
+    <form class="custom custom-form feedback-form">
+      <input name="toggl_version" type="hidden" value="TogglNext-3.33.9">
+      <input name="latest" type="hidden" value="true">
+      <input name="details" type="hidden">
+      <input name="date" type="hidden" value="2015-04-17T17:16:04+03:00">
+      <button class="btn-upload-image left">
+        <span class="upload-icon"><i class="fa fa-cloud-upload"></i></span><span class="upload-text">ADD SCREENSHOT</span>
+      </button>
+      <div class="submit-container right">
+        <button class="button green wide">Send</button>
+      </div>
+      <div class="feedback-file-info hide">
+        File selected: <span class="feedback-file"><div><input name="files" type="file" accept="image" class="upload-image-input">
+
+<div class="file-entry" style="display: none;">
+  <span class="file-name"></span>
+  <a class="icon remove-file button no-hover">
+    <i class="fa fa-times"></i>
+  </a>
+</div></div></span>
+      </div>
+    </form>
+  </div>
+</div></div></div>
+
+    <div id="support-view" class="thirty">
+      <div id="easter-egg" style="
+      width: 100%;
+      display:none;
+      background:#f5f5f5;
+      height: 500px;
+      z-index: 100;
+      position: absolute;
+      background-repeat: no-repeat;
+      background-size:600px;">
+    </div>
+      <div class="title-bar">
+        <h2 class="title">Support Team</h2>
+      </div>
+      <div class="body">
+        <div class="support-img" id="support-img"></div>
+        <div class="support-text">
+          Hey! We're around between 3am - 5pm Eastern time from Monday to Friday. PS: To ensure we understand you, please message us in English.
+        </div>
+      </div>
+    </div>
+    <div id="blog-view" class="thirty"><div><div class="title-bar">
+  <h2 class="title">Toggl Blog</h2>
+</div>
+<div class="body"><ul><li><div class="blogpost-date">April 17, 2015</div><a href="http://blog.toggl.com/2015/04/10-books-read-boost-productivity/" class="blogpost-link" target="_blank">10 Books You Should Read To Boost Your Productivity</a></li><li><div class="blogpost-date">April 15, 2015</div><a href="http://blog.toggl.com/2015/04/tech-worker-stereotype-comic/" class="blogpost-link" target="_blank">11 Types of Employees You Meet at a Tech Company [Infographic]:</a></li><li><div class="blogpost-date">April 13, 2015</div><a href="http://blog.toggl.com/2015/04/growing-business-beyond-borders/" class="blogpost-link" target="_blank">Growing Beyond National Borders Isn’t as Impossible as You Think</a></li><li><div class="blogpost-date">April 9, 2015</div><a href="http://blog.toggl.com/2015/04/holy-smokes-its-a-new-blog/" class="blogpost-link" target="_blank">Holy Smokes – It’s a New Blog!</a></li></ul></div></div></div>
+</div></div></div></div>
+<div class="footer-wrapper wrapper"><footer><section id="footer">
+  <ul class="inline-list centered">
+    <li><a href="http://support.toggl.com/" data-track-event="footer-click-support" target="_blank">Support</a></li>
+    <li><a href="http://blog.toggl.com/" data-track-event="footer-click-blog_link" target="_blank">Blog</a></li>
+    <li><a href="http://blog.toggl.com/2014/07/track-time-phone/" data-track-event="footer-click-app_link" target="_blank">Mobile App</a></li>
+    <li><a href="http://support.toggl.com/toggl-on-my-desktop/" data-track-event="footer-click-desktop_link" target="_blank">Desktop App</a></li>
+    <li><a href="https://jobs.toggl.com/" data-track-event="footer-click-jobs" target="_blank">Jobs</a></li>
+  </ul>
+</section></footer></div>
+<div id="modal-region"><div><div class="modal-content"></div></div></div>
+<div id="popdown-region"></div>
+<div id="project-overlay-region"></div> <!-- Used for project popdown -->
+<div class="offline-overlay-region"></div></div></div>
+<script src="./js/script.js"></script>
+</body></html>
