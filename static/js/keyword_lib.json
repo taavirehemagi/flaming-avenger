@@ -1,12 +1,37 @@
 [
 	{
-		"key" : "testing stuff",
-		"gif" : "hahano.gif",
+		"key" : "data is lost",
+		"gif" : "lost_data.gif",
 		"duration" : 1000
 	},
 	{
+		"key" : "single?",
+		"gif" : "single.gif",
+		"duration" : 2000
+	},
+	{
+		"key" : "asap",
+		"gif" : "asap.webm",
+		"duration" : 2000
+	},
+	{
+		"key" : "great",
+		"gif" : "great.gif",
+		"duration" : 2000
+	},
+	{
+		"key" : "hot",
+		"gif" : "hot.webm",
+		"duration" : 2000
+	},
+	{
+		"key" : "you suck",
+		"gif" : "suck.gif",
+		"duration" : 2000
+	},
+	{
 		"key" : "how hard can it be",
-		"gif" : "proffessionals.gif",
+		"gif" : "hard.gif",
 		"duration" : 2000
 	}
 ]
