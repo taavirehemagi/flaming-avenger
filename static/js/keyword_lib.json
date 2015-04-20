@@ -11,17 +11,17 @@
 	},
 	{
 		"key" : "asap",
-		"gif" : "asap.webm",
+		"gif" : "asap.gif",
 		"duration" : 2000
 	},
 	{
 		"key" : "great",
 		"gif" : "great.gif",
-		"duration" : 2000
+		"duration" : 2160
 	},
 	{
 		"key" : "hot",
-		"gif" : "hot.webm",
+		"gif" : "hot.gif",
 		"duration" : 2000
 	},
 	{
